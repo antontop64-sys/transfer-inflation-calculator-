@@ -1,11 +1,11 @@
 # Football Transfer Inflation Calculator
 
-A Streamlit web app that estimates how historical football transfer fees compare to today's value in euros.
+A Streamlit web app that estimates how much a historical football transfer fee would be worth in today's money using **3% annual compound inflation**.
 
 ## Project structure
 
-- `app.py` – Streamlit UI, input modes, result cards, chart, and top transfers table.
-- `inflation_calculator.py` – year-by-year inflation calculation logic and inflation datasets.
+- `app.py` – Streamlit UI and app styling.
+- `inflation_calculator.py` – inflation calculation logic.
 - `requirements.txt` – Python dependencies.
 - `README.md` – setup and run instructions.
 
