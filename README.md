@@ -28,10 +28,24 @@ Then open the local URL printed by Streamlit (usually `http://localhost:8501`).
 
 ## Features
 
-- Input validation:
-  - Year must be between **1990** and the **current year**.
-  - Transfer amount must be greater than **0**.
-- Default inflation model: **3% compound annual inflation**.
-- Includes a Neymar example transfer:
-  - Year: **2017**
-  - Fee: **€222 million**
+- Two input modes:
+  - **Manual input**
+  - **Choose from top transfers** with searchable player dropdown
+- Auto-filled player details in top transfer mode:
+  - player name, transfer year, transfer fee, from club, to club
+- Two inflation modes:
+  - **Economic inflation**
+  - **Football market inflation**
+- Year-by-year compounding using dictionary-based yearly rate data (no fixed single annual rate)
+- Styled result card showing:
+  - player (if available)
+  - original fee
+  - transfer year
+  - years passed
+  - selected inflation mode
+  - adjusted value today
+  - transfer route (if available)
+- Selected player info card
+- Reset button
+- Top transfers table with sorting by fee or year
+- Value growth chart based on the selected inflation mode
